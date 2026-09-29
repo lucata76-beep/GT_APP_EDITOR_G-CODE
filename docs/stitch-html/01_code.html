@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="it"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#111317;color:#e2e2e7;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-highest": "#333539", "on-primary-container": "#613b00", "primary-fixed": "#ffddb8", "surface": "#111317", "on-tertiary-container": "#284c10", "secondary-fixed-dim": "#95ccff", "outline": "#a08e7a", "on-secondary-fixed": "#001d32", "error": "#ffb4ab", "on-surface": "#e2e2e7", "inverse-on-surface": "#2e3035", "primary": "#ffc174", "primary-fixed-dim": "#ffb95f", "on-surface-variant": "#d8c3ad", "on-primary-fixed-variant": "#653e00", "on-secondary-container": "#dfeeff", "secondary-container": "#0070ac", "tertiary-fixed": "#c3f0a1", "secondary-fixed": "#cde5ff", "tertiary": "#add98d", "surface-bright": "#37393d", "surface-container-low": "#1a1c20", "on-tertiary": "#163800", "on-error-container": "#ffdad6", "surface-variant": "#333539", "on-background": "#e2e2e7", "error-container": "#93000a", "on-tertiary-fixed-variant": "#2b5013", "outline-variant": "#534434", "tertiary-fixed-dim": "#a7d387", "on-secondary-fixed-variant": "#004a75", "surface-tint": "#ffb95f", "surface-dim": "#111317", "inverse-primary": "#855300", "on-error": "#690005", "on-primary-fixed": "#2a1700", "on-secondary": "#003352", "on-primary": "#472a00", "primary-container": "#f59e0b", "tertiary-container": "#92bd74", "on-tertiary-fixed": "#0a2100", "surface-container-high": "#282a2e", "surface-container": "#1e2024", "background": "#111317", "inverse-surface": "#e2e2e7", "secondary": "#95ccff", "surface-container-lowest": "#0c0e12" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xl": "1.5rem", "space-md": "0.75rem", "space-xs": "0.25rem", "space-lg": "1rem", "gutter-desktop": "1rem", "margin-desktop": "1.25rem", "margin": "0.75rem", "space-sm": "0.5rem", "gutter": "0.75rem" }, fontFamily: { "code-editor-lg": ["JetBrains Mono"], "body-lg": ["Inter"], "label-sm": ["JetBrains Mono"], "headline-sm": ["Inter"], "label-md": ["JetBrains Mono"], "code-editor-base": ["JetBrains Mono"], "headline-lg-mobile": ["Inter"], "body-md": ["Inter"], "code-editor-dense": ["JetBrains Mono"], "headline-md": ["Inter"], "label-lg": ["JetBrains Mono"], "headline-lg": ["Inter"], "body-sm": ["Inter"] }, fontSize: { "code-editor-lg": ["18px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "500" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "600" }], "headline-sm": ["16px", { lineHeight: "22px", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }], "code-editor-base": ["16px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "500" }], "headline-lg-mobile": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "code-editor-dense": ["14px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "500" }], "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.04em", fontWeight: "600" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs shrink-0"><div class="w-11 h-11 rounded-lg bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[22px]">precision_manufacturing</span></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface uppercase tracking-tight">FANUC</span><span class="font-label-sm text-label-sm text-primary">[31i]</span></div></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-full shrink min-w-0 max-w-[140px]"><span class="w-2 h-2 rounded-full bg-primary-container shrink-0 animate-pulse"></span><span class="font-code-editor-dense text-code-editor-dense text-on-surface truncate">O1000.nc</span></div><div class="flex items-center gap-space-xs shrink-0"><button class="h-11 px-space-md bg-primary-container text-surface font-label-md text-label-md rounded flex items-center justify-center uppercase active:translate-y-px transition-all"><span class="material-symbols-outlined text-[18px] mr-1">save</span>SALVA</button><button class="w-11 h-11 rounded bg-surface-container flex items-center justify-center text-on-surface active:bg-surface-container-high"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface flex-grow"><div class="flex flex-col w-full max-w-[390px] mx-auto select-none">
+<!-- Status & Machine Pill Dock -->
+<section class="px-margin pt-space-xs pb-space-sm bg-surface">
+<div class="w-full bg-surface-container-low rounded-xl px-space-md py-space-xs flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2 h-2 rounded-full bg-secondary shrink-0 animate-ping"></span>
+<span class="font-label-sm text-label-sm text-secondary truncate uppercase">Mikron Mill P900</span>
+<span class="text-outline-variant font-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">FANUC 31i-MB</span>
+</div>
+<div class="flex items-center gap-1 shrink-0 ml-space-xs">
+<span class="material-symbols-outlined text-[14px] text-tertiary">cloud_off</span>
+<span class="font-label-sm text-label-sm text-tertiary tracking-wide uppercase">Offline</span>
+</div>
+</div>
+<!-- Active Program Sub-header Bar -->
+<div class="mt-space-xs flex items-center justify-between bg-surface-container px-space-md py-space-xs rounded-lg shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">code_blocks</span>
+<span class="font-code-editor-base text-code-editor-base text-on-surface font-semibold truncate tracking-tight">O1000.nc</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest rounded text-primary font-label-sm text-label-sm tracking-wider uppercase shrink-0">Modificato</span>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="font-label-sm text-label-sm text-outline-variant mr-1">L:04 C:19</span>
+<button class="h-8 px-space-md bg-primary-container text-on-primary-container font-label-sm text-label-sm rounded flex items-center justify-center font-bold tracking-wider uppercase active:scale-95 transition-transform shadow-sm" id="save-feedback-btn">
+<span class="material-symbols-outlined text-[16px] mr-1">check_circle</span>SALVATO
+        </button>
+</div>
+</div>
+</section>
+<!-- Central G-Code Industrial Editor Viewport -->
+<main class="w-full bg-surface-container-lowest overflow-hidden flex flex-col shadow-inner">
+<!-- Visual Editor Header Rule -->
+<div class="px-margin py-1 bg-surface-container-low flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase">
+<span class="tracking-widest">Macro-B Editor Buff: [01-07]</span>
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>EDIT</span>
+<span>FANUC ISO</span>
+</div>
+</div>
+<!-- Lines Container -->
+<div class="py-space-xs flex flex-col font-code-editor-base text-code-editor-base text-on-surface leading-loose">
+<!-- Line 01 -->
+<div class="flex items-center hover:bg-surface-container/40 group">
+<div class="w-10 px-2 py-0.5 text-right font-label-sm text-label-sm text-outline select-none shrink-0">01</div>
+<div class="w-1 bg-surface-container-high self-stretch shrink-0 mx-1"></div>
+<div class="w-8 shrink-0"></div>
+<div class="truncate pl-1">
+<span class="text-primary font-bold">O1000</span>
+<span class="text-outline-variant font-normal ml-2 tracking-normal italic">(ESEMPIO MACRO B)</span>
+</div>
+</div>
+<!-- Line 02 -->
+<div class="flex items-center hover:bg-surface-container/40 group">
+<div class="w-10 px-2 py-0.5 text-right font-label-sm text-label-sm text-outline select-none shrink-0">02</div>
+<div class="w-1 bg-surface-container-high self-stretch shrink-0 mx-1"></div>
+<div class="w-8 shrink-0"></div>
+<div class="truncate pl-1">
+<span class="text-secondary font-bold">#100</span>
+<span class="text-on-surface-variant mx-1">=</span>
+<span class="text-tertiary font-bold">0</span>
+</div>
+</div>
+<!-- Line 03 -->
+<div class="flex items-center hover:bg-surface-container/40 group">
+<div class="w-10 px-2 py-0.5 text-right font-label-sm text-label-sm text-outline select-none shrink-0">03</div>
+<div class="w-1 bg-surface-container-high self-stretch shrink-0 mx-1"></div>
+<div class="w-8 shrink-0"></div>
+<div class="truncate pl-1">
+<span class="text-primary-fixed-dim font-bold">WHILE</span>
+<span class="text-outline-variant mx-1">[</span><span class="text-secondary font-bold">#100</span>
+<span class="text-primary mx-1 font-bold">LT</span>
+<span class="text-tertiary font-bold">10</span><span class="text-outline-variant">]</span>
+<span class="text-primary-fixed-dim font-bold ml-2">DO1</span>
+</div>
+</div>
+<!-- Line 04: Active Editing Line -->
+<div class="flex items-center bg-surface-container-high relative group shadow-sm">
+<div class="absolute left-0 inset-y-0 w-1 bg-primary"></div>
+<div class="w-10 px-2 py-0.5 text-right font-label-sm text-label-sm text-primary font-bold select-none shrink-0">04</div>
+<div class="w-1 bg-primary/40 self-stretch shrink-0 mx-1"></div>
+<div class="w-8 shrink-0 flex items-center justify-end pr-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<div class="truncate pl-1 flex items-center">
+<span class="text-secondary font-bold">#100</span>
+<span class="text-on-surface-variant mx-1">=</span>
+<span class="text-secondary font-bold">#100</span>
+<span class="text-on-surface-variant mx-1">+</span>
+<span class="text-tertiary font-bold">1</span>
+<!-- Amber Blinking Industrial Cursor -->
+<span class="inline-block w-2.5 h-5 bg-primary ml-1 animate-pulse"></span>
+</div>
+</div>
+<!-- Line 05 -->
+<div class="flex items-center hover:bg-surface-container/40 group">
+<div class="w-10 px-2 py-0.5 text-right font-label-sm text-label-sm text-outline select-none shrink-0">05</div>
+<div class="w-1 bg-surface-container-high self-stretch shrink-0 mx-1"></div>
+<div class="w-8 shrink-0"></div>
+<div class="truncate pl-1">
+<span class="text-primary-fixed-dim font-bold">END1</span>
+</div>
+</div>
+<!-- Inline Diagnostic Warning Banner directly underneath Line 05 -->
+<div class="mx-margin my-1 p-space-xs bg-surface-container-low rounded-md flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[15px] text-primary">warning</span>
+</div>
+<span class="font-code-editor-dense text-code-editor-dense text-on-surface-variant truncate">
+            Verifica <span class="text-primary font-semibold">END1</span>: ciclo non simulato
+          </span>
+</div>
+<button class="shrink-0 px-2 py-1 bg-surface-container-highest rounded text-on-surface font-label-sm text-label-sm active:bg-surface-bright uppercase">Info</button>
+</div>
+<!-- Line 06 -->
+<div class="flex items-center hover:bg-surface-container/40 group">
+<div class="w-10 px-2 py-0.5 text-right font-label-sm text-label-sm text-outline select-none shrink-0">06</div>
+<div class="w-1 bg-surface-container-high self-stretch shrink-0 mx-1"></div>
+<div class="w-8 shrink-0"></div>
+<div class="truncate pl-1">
+<span class="text-primary-fixed-dim font-bold">IF</span>
+<span class="text-outline-variant mx-1">[</span><span class="text-secondary font-bold">#100</span>
+<span class="text-primary mx-1 font-bold">GT</span>
+<span class="text-tertiary font-bold">5</span><span class="text-outline-variant">]</span>
+<span class="text-primary-fixed-dim font-bold ml-1">THEN</span>
+<span class="text-secondary font-bold ml-2">#102</span>
+<span class="text-on-surface-variant mx-1">=</span>
+<span class="text-tertiary font-bold">1</span>
+</div>
+</div>
+<!-- Line 07 -->
+<div class="flex items-center hover:bg-surface-container/40 group">
+<div class="w-10 px-2 py-0.5 text-right font-label-sm text-label-sm text-outline select-none shrink-0">07</div>
+<div class="w-1 bg-surface-container-high self-stretch shrink-0 mx-1"></div>
+<div class="w-8 shrink-0"></div>
+<div class="truncate pl-1">
+<span class="text-error font-bold tracking-wider">M30</span>
+<span class="text-outline-variant font-normal ml-3 italic text-body-sm">(FINE PROGRAMMA)</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Quick CNC Touch Bar (Height 48px, oversized gloves-safe targets) -->
+<section class="h-12 w-full bg-surface-container-high px-space-xs flex items-center justify-between gap-1 shadow-md">
+<button class="h-10 flex-1 bg-surface-container hover:bg-surface-bright active:bg-primary active:text-on-primary text-secondary font-code-editor-lg text-code-editor-lg rounded font-bold flex items-center justify-center transition-colors">#</button>
+<button class="h-10 flex-1 bg-surface-container hover:bg-surface-bright active:bg-primary active:text-on-primary text-on-surface font-label-md text-label-md rounded font-bold flex items-center justify-center transition-colors">GOTO</button>
+<button class="h-10 flex-1 bg-surface-container hover:bg-surface-bright active:bg-primary active:text-on-primary text-primary font-label-md text-label-md rounded font-bold flex items-center justify-center transition-colors">IF</button>
+<button class="h-10 flex-1 bg-surface-container hover:bg-surface-bright active:bg-primary active:text-on-primary text-primary font-label-sm text-label-sm rounded font-bold flex items-center justify-center transition-colors">DO/END</button>
+<button class="h-10 flex-1 bg-surface-container hover:bg-surface-bright active:bg-primary active:text-on-primary text-tertiary font-label-md text-label-md rounded font-bold flex items-center justify-center transition-colors">A±</button>
+<button class="h-10 flex-1 bg-surface-container hover:bg-surface-bright active:bg-primary active:text-on-primary text-on-surface font-label-md text-label-md rounded flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">search</span>
+</button>
+</section>
+<!-- Native-Style iOS Dark Virtual Keyboard Docked -->
+<section class="w-full bg-surface-container-lowest p-space-xs flex flex-col gap-1.5 shadow-2xl">
+<!-- Keyboard Row 1 -->
+<div class="flex justify-between gap-1 px-0.5">
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">Q</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">W</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">E</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">R</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">T</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">Y</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">U</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">I</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">O</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">P</button>
+</div>
+<!-- Keyboard Row 2 -->
+<div class="flex justify-center gap-1 px-3">
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">A</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">S</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">D</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">F</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">G</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">H</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">J</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">K</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">L</button>
+</div>
+<!-- Keyboard Row 3 with Shift & Backspace -->
+<div class="flex justify-between gap-1 px-0.5">
+<button class="h-10 w-11 bg-surface-container-high rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center shadow active:bg-surface-bright">
+<span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">Z</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">X</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">C</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">V</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">B</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">N</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright">M</button>
+<button class="h-10 w-11 bg-surface-container-high rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center shadow active:bg-surface-bright">
+<span class="material-symbols-outlined text-[20px]">backspace</span>
+</button>
+</div>
+<!-- Keyboard Row 4: Modifiers, Space & Return -->
+<div class="flex justify-between gap-1 px-0.5">
+<button class="h-10 w-12 bg-surface-container-high rounded font-label-md text-label-md text-on-surface flex items-center justify-center shadow font-semibold active:bg-surface-bright">123</button>
+<button class="h-10 w-10 bg-surface-container-high rounded font-body-lg text-body-lg text-on-surface flex items-center justify-center shadow active:bg-surface-bright">
+<span class="material-symbols-outlined text-[20px]">language</span>
+</button>
+<button class="h-10 flex-1 bg-surface-container rounded font-body-md text-body-md text-on-surface flex items-center justify-center font-medium shadow active:bg-surface-bright tracking-wider">spazio</button>
+<button class="h-10 px-3 bg-secondary-container text-on-secondary-container rounded font-label-md text-label-md flex items-center justify-center font-bold tracking-wide shadow active:scale-95 transition-transform uppercase">Invio</button>
+</div>
+</section>
+</div>
+<script>
+  (function() {
+    const saveBtn = document.getElementById('save-feedback-btn');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        saveBtn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        saveBtn.classList.add('bg-tertiary', 'text-on-tertiary');
+        saveBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] mr-1">task_alt</span>OK!';
+        setTimeout(() => {
+          saveBtn.classList.remove('bg-tertiary', 'text-on-tertiary');
+          saveBtn.classList.add('bg-primary-container', 'text-on-primary-container');
+          saveBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] mr-1">check_circle</span>SALVATO';
+        }, 1500);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary bg-surface-container-high"><div class="flex justify-between items-stretch h-20 px-space-xs py-space-xs gap-1"><a class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded bg-surface-container-low text-on-surface-variant transition-colors" data-path="apri-file" href="#"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="font-label-sm text-label-sm mt-0.5">Apri</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded bg-surface-container-low text-on-surface-variant transition-colors" data-path="macro-b" href="#"><span class="material-symbols-outlined text-[20px]">code</span><span class="font-label-sm text-label-sm mt-0.5">Macro B</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded bg-surface-container-low text-on-surface-variant transition-colors" data-path="dimensione" href="#"><span class="material-symbols-outlined text-[20px]">format_size</span><span class="font-label-sm text-label-sm mt-0.5">Dim A±</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded bg-surface-container-low text-on-surface-variant transition-colors" data-path="ricerca-lente" href="#"><span class="material-symbols-outlined text-[20px]">search</span><span class="font-label-sm text-label-sm mt-0.5">Lente</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded bg-surface-container-low text-on-surface-variant transition-colors" data-path="esporta" href="#"><span class="material-symbols-outlined text-[20px]">ios_share</span><span class="font-label-sm text-label-sm mt-0.5">Esporta</span></a></div></nav></body></html>

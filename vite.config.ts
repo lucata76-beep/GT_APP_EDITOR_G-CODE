@@ -5,6 +5,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { defineConfig, type Plugin, type ViteDevServer } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
+import { VitePWA } from "vite-plugin-pwa";
 
 // =============================================================================
 // Manus Debug Collector - Vite Plugin
@@ -203,7 +204,34 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
+const plugins = [
+  react(),
+  tailwindcss(),
+  jsxLocPlugin(),
+  vitePluginManusRuntime(),
+  vitePluginManusDebugCollector(),
+  vitePluginStorageProxy(),
+  VitePWA({
+    registerType: "autoUpdate",
+    includeAssets: ["icon.svg"],
+    manifest: {
+      name: "FANUC Workshop IDE",
+      short_name: "Workshop IDE",
+      description: "Editor locale-first per programmi ISO G-code FANUC e Custom Macro B.",
+      theme_color: "#111317",
+      background_color: "#0c0e12",
+      display: "standalone",
+      orientation: "any",
+      icons: [{ src: "/icon.svg", sizes: "any", type: "image/svg+xml", purpose: "any maskable" }],
+    },
+    workbox: {
+      globPatterns: ["**/*.{js,css,html,svg,woff2}"],
+      cleanupOutdatedCaches: true,
+      navigateFallback: "index.html",
+    },
+    devOptions: { enabled: true },
+  }),
+];
 
 export default defineConfig({
   plugins,

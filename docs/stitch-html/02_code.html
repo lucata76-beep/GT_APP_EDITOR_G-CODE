@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="it"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#111317;color:#e2e2e7;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-highest": "#333539", "on-primary-container": "#613b00", "primary-fixed": "#ffddb8", "surface": "#111317", "on-tertiary-container": "#284c10", "secondary-fixed-dim": "#95ccff", "outline": "#a08e7a", "on-secondary-fixed": "#001d32", "error": "#ffb4ab", "on-surface": "#e2e2e7", "inverse-on-surface": "#2e3035", "primary": "#ffc174", "primary-fixed-dim": "#ffb95f", "on-surface-variant": "#d8c3ad", "on-primary-fixed-variant": "#653e00", "on-secondary-container": "#dfeeff", "secondary-container": "#0070ac", "tertiary-fixed": "#c3f0a1", "secondary-fixed": "#cde5ff", "tertiary": "#add98d", "surface-bright": "#37393d", "surface-container-low": "#1a1c20", "on-tertiary": "#163800", "on-error-container": "#ffdad6", "surface-variant": "#333539", "on-background": "#e2e2e7", "error-container": "#93000a", "on-tertiary-fixed-variant": "#2b5013", "outline-variant": "#534434", "tertiary-fixed-dim": "#a7d387", "on-secondary-fixed-variant": "#004a75", "surface-tint": "#ffb95f", "surface-dim": "#111317", "inverse-primary": "#855300", "on-error": "#690005", "on-primary-fixed": "#2a1700", "on-secondary": "#003352", "on-primary": "#472a00", "primary-container": "#f59e0b", "tertiary-container": "#92bd74", "on-tertiary-fixed": "#0a2100", "surface-container-high": "#282a2e", "surface-container": "#1e2024", "background": "#111317", "inverse-surface": "#e2e2e7", "secondary": "#95ccff", "surface-container-lowest": "#0c0e12" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xl": "1.5rem", "space-md": "0.75rem", "space-xs": "0.25rem", "space-lg": "1rem", "gutter-desktop": "1rem", "margin-desktop": "1.25rem", "margin": "0.75rem", "space-sm": "0.5rem", "gutter": "0.75rem" }, fontFamily: { "code-editor-lg": ["JetBrains Mono"], "body-lg": ["Inter"], "label-sm": ["JetBrains Mono"], "headline-sm": ["Inter"], "label-md": ["JetBrains Mono"], "code-editor-base": ["JetBrains Mono"], "headline-lg-mobile": ["Inter"], "body-md": ["Inter"], "code-editor-dense": ["JetBrains Mono"], "headline-md": ["Inter"], "label-lg": ["JetBrains Mono"], "headline-lg": ["Inter"], "body-sm": ["Inter"] }, fontSize: { "code-editor-lg": ["18px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "500" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "600" }], "headline-sm": ["16px", { lineHeight: "22px", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }], "code-editor-base": ["16px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "500" }], "headline-lg-mobile": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "code-editor-dense": ["14px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "500" }], "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.04em", fontWeight: "600" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs shrink-0"><div class="w-11 h-11 rounded-lg bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[22px]">precision_manufacturing</span></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface uppercase tracking-tight">FANUC</span><span class="font-label-sm text-label-sm text-primary">[31i]</span></div></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-full shrink min-w-0 max-w-[140px]"><span class="w-2 h-2 rounded-full bg-primary-container shrink-0 animate-pulse"></span><span class="font-code-editor-dense text-code-editor-dense text-on-surface truncate">O1000.nc</span></div><div class="flex items-center gap-space-xs shrink-0"><button class="h-11 px-space-md bg-primary-container text-surface font-label-md text-label-md rounded flex items-center justify-center uppercase active:translate-y-px transition-all"><span class="material-symbols-outlined text-[18px] mr-1">save</span>SALVA</button><button class="w-11 h-11 rounded bg-surface-container flex items-center justify-center text-on-surface active:bg-surface-container-high"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface flex-grow"><div class="flex flex-col w-full text-on-surface">
+<div class="px-margin pt-space-md pb-space-xs flex flex-col gap-space-sm bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">folder_special</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Programmi CNC</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Mikron P900 • FANUC 31i</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm">DNC PRONTO</span>
+</div>
+</div>
+<div class="relative w-full mt-1">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-12 pl-10 pr-10 bg-surface-container text-on-surface placeholder:text-on-surface-variant/70 font-code-editor-dense text-code-editor-dense rounded outline-none shadow-inner transition-colors focus:bg-surface-container-high" id="cnc-search-input" placeholder="Cerca codice O o commento..." type="search"/>
+<button class="absolute inset-y-0 right-0 pr-3 hidden items-center text-on-surface-variant active:text-primary" id="cnc-clear-search">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<div class="flex gap-space-xs pt-1 pb-1">
+<button class="filter-tab flex-1 h-10 px-2 rounded bg-surface-container-high text-primary font-label-md text-label-md uppercase flex items-center justify-center gap-1 shadow-sm transition-transform active:scale-[0.98]" data-filter="all">
+<span>Tutti</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface text-[10px] font-label-sm">24</span>
+</button>
+<button class="filter-tab flex-1 h-10 px-2 rounded bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase flex items-center justify-center gap-1 transition-transform active:scale-[0.98]" data-filter="recent">
+<span class="material-symbols-outlined text-[16px]">history</span>
+<span>Recenti</span>
+</button>
+<button class="filter-tab flex-1 h-10 px-2 rounded bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase flex items-center justify-center gap-1 transition-transform active:scale-[0.98]" data-filter="fav">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>Preferiti</span>
+</button>
+</div>
+</div>
+<div class="px-margin py-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Memoria NC: 1.8 MB / 4.0 MB</span>
+<span class="font-label-sm text-label-sm text-tertiary">BUFFER OK</span>
+</div>
+<div class="flex flex-col px-margin gap-space-xs pb-4" id="program-list">
+<!-- Active Program Card -->
+<div class="program-card group flex flex-col p-space-md rounded bg-surface-container-high shadow-md active:bg-surface-bright transition-all" data-code="O1000" data-desc="ESEMPIO MACRO B" data-fav="true" data-recent="true">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-editor-lg text-code-editor-lg text-primary tracking-wide">O1000</span>
+<span class="px-2 py-0.5 rounded bg-primary-container text-surface font-label-sm text-label-sm uppercase flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-surface animate-ping"></span>
+            IN USO
+          </span>
+</div>
+<button class="fav-toggle w-9 h-9 -mr-2 -mt-2 rounded flex items-center justify-center text-primary active:bg-surface-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+<div class="mt-1 font-label-md text-label-md text-on-surface uppercase truncate">
+        ESEMPIO MACRO B (CALCOLO TASCHE)
+      </div>
+<div class="flex flex-wrap items-center gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-primary-fixed-variant font-label-sm text-label-sm uppercase">
+          MODIFICATO • BUFFER NON SINCR.
+        </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+          VAR #100-#150
+        </span>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">straighten</span>
+            4.2 KB
+          </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+            Oggi 14:22
+          </span>
+</div>
+<div class="flex items-center text-primary font-code-editor-dense text-code-editor-dense">
+<span>APRI &gt;</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="program-card group flex flex-col p-space-md rounded bg-surface-container shadow-sm active:bg-surface-container-high transition-all" data-code="O0045" data-desc="SPIANATURA PIASTRA BASE" data-fav="true" data-recent="true">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-editor-lg text-code-editor-lg text-on-surface tracking-wide">O0045</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-tertiary font-label-sm text-label-sm">
+            G54 • T01
+          </span>
+</div>
+<button class="fav-toggle w-9 h-9 -mr-2 -mt-2 rounded flex items-center justify-center text-primary active:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+<div class="mt-1 font-label-md text-label-md text-on-surface uppercase truncate">
+        SPIANATURA PIASTRA ALLUMINIO 250X180
+      </div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+          FRESA D50R0.8 TORICA
+        </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-secondary-fixed-dim font-label-sm text-label-sm">
+          S8500 F3200
+        </span>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">straighten</span>
+            12.8 KB
+          </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">calendar_today</span>
+            Ieri 18:40
+          </span>
+</div>
+<span class="font-code-editor-dense text-code-editor-dense text-on-surface-variant group-active:text-primary">CARICA</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="program-card group flex flex-col p-space-md rounded bg-surface-container shadow-sm active:bg-surface-container-high transition-all" data-code="O0120" data-desc="TASCA CIRCOLARE D60" data-fav="false" data-recent="true">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-editor-lg text-code-editor-lg text-on-surface tracking-wide">O0120</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary-fixed-dim font-label-sm text-label-sm">
+            G55 • T04
+          </span>
+</div>
+<button class="fav-toggle w-9 h-9 -mr-2 -mt-2 rounded flex items-center justify-center text-on-surface-variant active:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]">star</span>
+</button>
+</div>
+<div class="mt-1 font-label-md text-label-md text-on-surface uppercase truncate">
+        TASCA CIRCOLARE D60 C/SMUSSO ELICOIDALE
+      </div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+          ELICOIDE G02/G03
+        </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-tertiary font-label-sm text-label-sm">
+          CYCLE G12/G13
+        </span>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">straighten</span>
+            8.4 KB
+          </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">calendar_today</span>
+            08 Apr
+          </span>
+</div>
+<span class="font-code-editor-dense text-code-editor-dense text-on-surface-variant group-active:text-primary">CARICA</span>
+</div>
+</div>
+<!-- Card 4 (Protected ATC Macro) -->
+<div class="program-card group flex flex-col p-space-md rounded bg-surface-container shadow-sm active:bg-surface-container-high transition-all" data-code="O9010" data-desc="SOTTOPROGR. CAMBIO UTENSILE ATC M06 MACRO" data-fav="false" data-recent="false">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-editor-lg text-code-editor-lg text-on-surface-variant tracking-wide">O9010</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary font-label-sm text-label-sm uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+            SISTEMA
+          </span>
+</div>
+<button class="fav-toggle w-9 h-9 -mr-2 -mt-2 rounded flex items-center justify-center text-on-surface-variant active:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]">star</span>
+</button>
+</div>
+<div class="mt-1 font-label-md text-label-md text-on-surface uppercase truncate">
+        SOTTOPROGR. CAMBIO UTENSILE ATC (M06)
+      </div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+          PARAMETRO FANUC 6071
+        </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-error font-label-sm text-label-sm">
+          SOLO LETTURA
+        </span>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">straighten</span>
+            2.1 KB
+          </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+            Certificato OEM
+          </span>
+</div>
+<span class="font-code-editor-dense text-code-editor-dense text-on-surface-variant">ISPEZIONE</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="program-card group flex flex-col p-space-md rounded bg-surface-container shadow-sm active:bg-surface-container-high transition-all" data-code="O0502" data-desc="FILETTATURA M12 RIGIDA" data-fav="true" data-recent="false">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-editor-lg text-code-editor-lg text-on-surface tracking-wide">O0502</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary-fixed-dim font-label-sm text-label-sm">
+            G84 RIGIDO
+          </span>
+</div>
+<button class="fav-toggle w-9 h-9 -mr-2 -mt-2 rounded flex items-center justify-center text-primary active:bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+<div class="mt-1 font-label-md text-label-md text-on-surface uppercase truncate">
+        FILETTATURA M12X1.75 MASCHIO A RULLARE
+      </div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+          M29 S500 SYNCHRO
+        </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-low text-tertiary font-label-sm text-label-sm">
+          PROF. Z-28.0
+        </span>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">straighten</span>
+            3.1 KB
+          </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">calendar_today</span>
+            02 Apr
+          </span>
+</div>
+<span class="font-code-editor-dense text-code-editor-dense text-on-surface-variant group-active:text-primary">CARICA</span>
+</div>
+</div>
+</div>
+<!-- Empty State Display -->
+<div class="hidden flex-col items-center justify-center py-12 px-margin text-center" id="empty-state">
+<div class="w-14 h-14 rounded bg-surface-container-high flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-[32px]">manage_search</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Nessun programma CNC trovato</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-[260px]">
+      Verifica il codice 'O' o il commento utensile cercato nel registro FANUC.
+    </p>
+<button class="mt-4 px-4 h-11 bg-surface-container-high text-primary font-label-md text-label-md rounded uppercase active:bg-surface-bright" id="btn-reset-filters">
+      Mostra Tutti i Programmi
+    </button>
+</div>
+<!-- Quick Action Drawer Control Section -->
+<div class="px-margin pt-space-xs pb-space-lg flex flex-col gap-space-sm">
+<button class="w-full h-12 rounded bg-primary-container text-surface font-label-lg text-label-lg uppercase flex items-center justify-center gap-2 active:bg-primary shadow-md active:translate-y-px transition-all" id="btn-new-program">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+      Nuovo Programma da Modello
+    </button>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="h-11 rounded bg-surface-container text-on-surface font-label-sm text-label-sm uppercase flex items-center justify-center gap-1.5 active:bg-surface-container-high shadow-sm" id="btn-import-usb">
+<span class="material-symbols-outlined text-[18px] text-primary">usb</span>
+        Importa USB
+      </button>
+<button class="h-11 rounded bg-surface-container text-on-surface font-label-sm text-label-sm uppercase flex items-center justify-center gap-1.5 active:bg-surface-container-high shadow-sm" id="btn-import-airdrop">
+<span class="material-symbols-outlined text-[18px] text-secondary">wifi_tethering</span>
+        AirDrop / Rete
+      </button>
+</div>
+</div>
+<!-- Micro Interaction Toast / Notification -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-3 transition-all duration-200 flex items-center gap-2 px-4 py-2 rounded bg-surface-container-highest text-on-surface shadow-xl max-w-[90%]" id="cnc-toast">
+<span class="material-symbols-outlined text-primary text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide truncate" id="toast-msg">Operazione completata</span>
+</div>
+</div>
+<script>
+  (function() {
+    const searchInput = document.getElementById('cnc-search-input');
+    const clearBtn = document.getElementById('cnc-clear-search');
+    const cards = document.querySelectorAll('.program-card');
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const emptyState = document.getElementById('empty-state');
+    const resetBtn = document.getElementById('btn-reset-filters');
+    const toast = document.getElementById('cnc-toast');
+    const toastMsg = document.getElementById('toast-msg');
+    const toastIcon = document.getElementById('toast-icon');
+
+    let currentFilter = 'all';
+
+    function showToast(msg, icon = 'check_circle') {
+      if (!toast) return;
+      toastMsg.textContent = msg;
+      toastIcon.textContent = icon;
+      toast.classList.remove('opacity-0', 'translate-y-3');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      clearTimeout(window.__toastTimeout);
+      window.__toastTimeout = setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-3');
+      }, 2400);
+    }
+
+    function filterList() {
+      const q = (searchInput.value || '').trim().toUpperCase();
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const code = card.dataset.code || '';
+        const desc = card.dataset.desc || '';
+        const isFav = card.dataset.fav === 'true';
+        const isRecent = card.dataset.recent === 'true';
+
+        let matchesTab = true;
+        if (currentFilter === 'recent') matchesTab = isRecent;
+        if (currentFilter === 'fav') matchesTab = isFav;
+
+        const matchesQuery = !q || code.includes(q) || desc.includes(q);
+
+        if (matchesTab && matchesQuery) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+      } else {
+        emptyState.classList.add('hidden');
+      }
+
+      if (q.length > 0) {
+        clearBtn.classList.remove('hidden');
+        clearBtn.classList.add('flex');
+      } else {
+        clearBtn.classList.add('hidden');
+        clearBtn.classList.remove('flex');
+      }
+    }
+
+    searchInput.addEventListener('input', filterList);
+
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      searchInput.focus();
+      filterList();
+    });
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => {
+          t.classList.remove('bg-surface-container-high', 'text-primary');
+          t.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        tab.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        tab.classList.add('bg-surface-container-high', 'text-primary');
+        currentFilter = tab.dataset.filter;
+        filterList();
+      });
+    });
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        currentFilter = 'all';
+        filterTabs.forEach((t, idx) => {
+          if (idx === 0) {
+            t.classList.remove('bg-surface-container', 'text-on-surface-variant');
+            t.classList.add('bg-surface-container-high', 'text-primary');
+          } else {
+            t.classList.remove('bg-surface-container-high', 'text-primary');
+            t.classList.add('bg-surface-container', 'text-on-surface-variant');
+          }
+        });
+        filterList();
+      });
+    }
+
+    // Toggle Favorite icons
+    document.querySelectorAll('.fav-toggle').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const card = btn.closest('.program-card');
+        const icon = btn.querySelector('.material-symbols-outlined');
+        const isFav = card.dataset.fav === 'true';
+
+        if (isFav) {
+          card.dataset.fav = 'false';
+          btn.classList.remove('text-primary');
+          btn.classList.add('text-on-surface-variant');
+          icon.style.fontVariationSettings = "'FILL' 0";
+          showToast(`Rimosso dai Preferiti (${card.dataset.code})`, 'star_half');
+        } else {
+          card.dataset.fav = 'true';
+          btn.classList.add('text-primary');
+          btn.classList.remove('text-on-surface-variant');
+          icon.style.fontVariationSettings = "'FILL' 1";
+          showToast(`Aggiunto ai Preferiti (${card.dataset.code})`, 'star');
+        }
+
+        if (currentFilter === 'fav') filterList();
+      });
+    });
+
+    // Program selection
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const code = card.dataset.code;
+        showToast(`Caricamento buffer: ${code}...`, 'sync');
+      });
+    });
+
+    // Action buttons
+    const btnNew = document.getElementById('btn-new-program');
+    if (btnNew) {
+      btnNew.addEventListener('click', () => {
+        showToast('Creazione file O1001.nc da template Mikron', 'post_add');
+      });
+    }
+
+    const btnUsb = document.getElementById('btn-import-usb');
+    if (btnUsb) {
+      btnUsb.addEventListener('click', () => {
+        showToast('Scansione porta USB CNC in corso...', 'usb');
+      });
+    }
+
+    const btnAirDrop = document.getElementById('btn-import-airdrop');
+    if (btnAirDrop) {
+      btnAirDrop.addEventListener('click', () => {
+        showToast('In attesa di ricezione DNC wireless...', 'sensors');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary bg-surface-container-high"><div class="flex justify-between items-stretch h-20 px-space-xs py-space-xs gap-1"><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded transition-colors text-primary bg-surface-container-high" data-path="apri-file" href="#"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="font-label-sm text-label-sm mt-0.5">Apri</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded bg-surface-container-low text-on-surface-variant transition-colors" data-path="macro-b" href="#"><span class="material-symbols-outlined text-[20px]">code</span><span class="font-label-sm text-label-sm mt-0.5">Macro B</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded bg-surface-container-low text-on-surface-variant transition-colors" data-path="dimensione" href="#"><span class="material-symbols-outlined text-[20px]">format_size</span><span class="font-label-sm text-label-sm mt-0.5">Dim A±</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded bg-surface-container-low text-on-surface-variant transition-colors" data-path="ricerca-lente" href="#"><span class="material-symbols-outlined text-[20px]">search</span><span class="font-label-sm text-label-sm mt-0.5">Lente</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded bg-surface-container-low text-on-surface-variant transition-colors" data-path="esporta" href="#"><span class="material-symbols-outlined text-[20px]">ios_share</span><span class="font-label-sm text-label-sm mt-0.5">Esporta</span></a></div></nav></body></html>

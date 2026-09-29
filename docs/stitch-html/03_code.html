@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="it"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#111317;color:#e2e2e7;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-highest": "#333539", "on-primary-container": "#613b00", "primary-fixed": "#ffddb8", "surface": "#111317", "on-tertiary-container": "#284c10", "secondary-fixed-dim": "#95ccff", "outline": "#a08e7a", "on-secondary-fixed": "#001d32", "error": "#ffb4ab", "on-surface": "#e2e2e7", "inverse-on-surface": "#2e3035", "primary": "#ffc174", "primary-fixed-dim": "#ffb95f", "on-surface-variant": "#d8c3ad", "on-primary-fixed-variant": "#653e00", "on-secondary-container": "#dfeeff", "secondary-container": "#0070ac", "tertiary-fixed": "#c3f0a1", "secondary-fixed": "#cde5ff", "tertiary": "#add98d", "surface-bright": "#37393d", "surface-container-low": "#1a1c20", "on-tertiary": "#163800", "on-error-container": "#ffdad6", "surface-variant": "#333539", "on-background": "#e2e2e7", "error-container": "#93000a", "on-tertiary-fixed-variant": "#2b5013", "outline-variant": "#534434", "tertiary-fixed-dim": "#a7d387", "on-secondary-fixed-variant": "#004a75", "surface-tint": "#ffb95f", "surface-dim": "#111317", "inverse-primary": "#855300", "on-error": "#690005", "on-primary-fixed": "#2a1700", "on-secondary": "#003352", "on-primary": "#472a00", "primary-container": "#f59e0b", "tertiary-container": "#92bd74", "on-tertiary-fixed": "#0a2100", "surface-container-high": "#282a2e", "surface-container": "#1e2024", "background": "#111317", "inverse-surface": "#e2e2e7", "secondary": "#95ccff", "surface-container-lowest": "#0c0e12" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xl": "1.5rem", "space-md": "0.75rem", "space-xs": "0.25rem", "space-lg": "1rem", "gutter-desktop": "1rem", "margin-desktop": "1.25rem", "margin": "0.75rem", "space-sm": "0.5rem", "gutter": "0.75rem" }, fontFamily: { "code-editor-lg": ["JetBrains Mono"], "body-lg": ["Inter"], "label-sm": ["JetBrains Mono"], "headline-sm": ["Inter"], "label-md": ["JetBrains Mono"], "code-editor-base": ["JetBrains Mono"], "headline-lg-mobile": ["Inter"], "body-md": ["Inter"], "code-editor-dense": ["JetBrains Mono"], "headline-md": ["Inter"], "label-lg": ["JetBrains Mono"], "headline-lg": ["Inter"], "body-sm": ["Inter"] }, fontSize: { "code-editor-lg": ["18px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "500" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "600" }], "headline-sm": ["16px", { lineHeight: "22px", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }], "code-editor-base": ["16px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "500" }], "headline-lg-mobile": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "code-editor-dense": ["14px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "500" }], "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.04em", fontWeight: "600" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs shrink-0"><div class="w-11 h-11 rounded-lg bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[22px]">precision_manufacturing</span></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface uppercase tracking-tight">FANUC</span><span class="font-label-sm text-label-sm text-primary">[31i]</span></div></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-full shrink min-w-0 max-w-[140px]"><span class="w-2 h-2 rounded-full bg-primary-container shrink-0 animate-pulse"></span><span class="font-code-editor-dense text-code-editor-dense text-on-surface truncate">O1000.nc</span></div><div class="flex items-center gap-space-xs shrink-0"><button class="h-11 px-space-md bg-primary-container text-surface font-label-md text-label-md rounded flex items-center justify-center uppercase active:translate-y-px transition-all"><span class="material-symbols-outlined text-[18px] mr-1">save</span>SALVA</button><button class="w-11 h-11 rounded bg-surface-container flex items-center justify-center text-on-surface active:bg-surface-container-high"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface flex-grow"><div class="flex flex-col w-full relative">
+<!-- Dimmed Background Code View (Context Behind Sheet) -->
+<div aria-hidden="true" class="w-full px-margin opacity-35 select-none pointer-events-none">
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-1 font-code-editor-dense text-code-editor-dense text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="text-surface-container-highest w-7 text-right">01</span>
+<span class="text-primary font-semibold">O1000</span>
+<span class="text-outline-variant">(PROGRAMMA SGROSSATURA)</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="text-surface-container-highest w-7 text-right">02</span>
+<span>G21 G90 G40 G80 G49</span>
+</div>
+<div class="flex items-center gap-space-md bg-surface-container-high rounded px-1 -mx-1">
+<span class="text-primary-container font-semibold w-7 text-right">03</span>
+<span>T01 M06 (FRESA D12 Z4)</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="text-surface-container-highest w-7 text-right">04</span>
+<span class="text-primary font-semibold">S6500 M03 F2200</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="text-surface-container-highest w-7 text-right">05</span>
+<span>G00 X0. Y0. Z5.0</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="text-surface-container-highest w-7 text-right">06</span>
+<span>G01 Z-1.2 F800</span>
+</div>
+</div>
+</div>
+<!-- Industrial Dark Charcoal Sheet Container -->
+<div class="relative w-full mt-space-sm bg-surface-container-low rounded-t-xl shadow-xl flex flex-col overflow-hidden">
+<!-- Top Grab Handle Area -->
+<div class="w-full flex flex-col items-center pt-space-xs pb-space-xs bg-surface-container">
+<div class="w-12 h-1.5 rounded-full bg-surface-container-highest"></div>
+</div>
+<!-- Sheet Header -->
+<div class="flex items-center justify-between px-margin py-space-sm bg-surface-container border-b-0">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Macro B FANUC</span>
+<span class="font-label-sm text-label-sm text-primary">BUFFER ATTIVO: RIGA 04</span>
+</div>
+</div>
+<button aria-label="Chiudi finestra macro" class="w-11 h-11 rounded bg-surface-container-high flex items-center justify-center text-on-surface active:bg-surface-container-highest" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- Macro Category Navigation Pills -->
+<div class="px-margin py-space-sm bg-surface-container-low overflow-x-auto no-scrollbar">
+<div class="flex items-center gap-space-xs min-w-max">
+<button class="h-10 px-space-md rounded bg-primary-container text-surface font-label-md text-label-md uppercase tracking-wider flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+          Cicli Ripetitivi
+        </button>
+<button class="h-10 px-space-md rounded bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-wider flex items-center gap-1.5 active:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[16px]">alt_route</span>
+          Condizioni IF
+        </button>
+<button class="h-10 px-space-md rounded bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-wider flex items-center gap-1.5 active:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[16px]">tag</span>
+          Variabili #
+        </button>
+<button class="h-10 px-space-md rounded bg-surface-container text-on-surface-variant font-label-md text-label-md uppercase tracking-wider flex items-center gap-1.5 active:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+          Personali
+        </button>
+</div>
+</div>
+<div class="px-margin space-y-space-md pb-space-lg">
+<!-- Active Template Card -->
+<div class="bg-surface-container rounded-lg p-space-md space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">WHILE [condizione] DO</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-highest px-2 py-0.5 rounded">ISO G-CODE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Esegue iterazioni parametriche fino al soddisfacimento del test relazionale.
+        </p>
+<!-- Monospace Live Syntax Preview Box -->
+<div class="bg-surface-container-lowest rounded p-space-sm font-code-editor-dense text-code-editor-dense text-on-surface space-y-1 relative">
+<div class="absolute right-2 top-2 text-[10px] font-label-sm text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">
+            FANUC 31i
+          </div>
+<div class="text-primary font-semibold">
+            WHILE [<span class="text-secondary" id="preview-var">#100</span> <span class="text-tertiary" id="preview-op">LT</span> <span class="text-primary-fixed" id="preview-val">10</span>] DO<span class="text-secondary" id="preview-idx-1">1</span>
+</div>
+<div class="pl-space-md text-on-surface-variant">
+<span class="text-secondary" id="preview-var-inner">#100</span> = <span class="text-secondary" id="preview-var-inner-2">#100</span> + 1
+          </div>
+<div class="text-primary font-semibold">
+            END<span class="text-secondary" id="preview-idx-2">1</span>
+</div>
+</div>
+</div>
+<!-- Workshop-Hardened Form Controls (48px+ targets for gloved fingers) -->
+<div class="bg-surface-container rounded-lg p-space-md space-y-space-md">
+<!-- Parameter 1: Variable Selector -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Variabile FANUC</label>
+<span class="font-label-sm text-label-sm text-primary">Comune (#100-#149)</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="var-btn h-12 bg-primary-container text-surface rounded font-code-editor-base text-code-editor-base flex flex-col items-center justify-center font-bold" onclick="setVariable('#100', 'Contatore')" type="button">
+<span>#100</span>
+<span class="font-label-sm text-[10px] leading-tight font-normal">Contatore</span>
+</button>
+<button class="var-btn h-12 bg-surface-container-high text-on-surface rounded font-code-editor-base text-code-editor-base flex flex-col items-center justify-center active:bg-surface-container-highest" onclick="setVariable('#101', 'Profondità Z')" type="button">
+<span>#101</span>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface-variant">Quota Z</span>
+</button>
+<button class="var-btn h-12 bg-surface-container-high text-on-surface rounded font-code-editor-base text-code-editor-base flex flex-col items-center justify-center active:bg-surface-container-highest" onclick="setVariable('#102', 'Offset Passo')" type="button">
+<span>#102</span>
+<span class="font-label-sm text-[10px] leading-tight text-on-surface-variant">Passo DX</span>
+</button>
+</div>
+</div>
+<!-- Parameter 2: Relational Operator Segmented Switch -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Operatore Logico</label>
+<div class="grid grid-cols-3 gap-space-xs bg-surface-container-lowest p-1 rounded">
+<button class="op-btn h-12 bg-surface-container-high text-primary rounded font-label-md text-label-md uppercase flex flex-col items-center justify-center font-bold shadow-sm" id="op-lt" onclick="setOperator('LT', '&lt; Minore')" type="button">
+<span>LT</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">&lt; Minore</span>
+</button>
+<button class="op-btn h-12 bg-transparent text-on-surface rounded font-label-md text-label-md uppercase flex flex-col items-center justify-center active:bg-surface-container-high" id="op-gt" onclick="setOperator('GT', '&gt; Maggiore')" type="button">
+<span>GT</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">&gt; Maggiore</span>
+</button>
+<button class="op-btn h-12 bg-transparent text-on-surface rounded font-label-md text-label-md uppercase flex flex-col items-center justify-center active:bg-surface-container-high" id="op-eq" onclick="setOperator('EQ', '= Uguale')" type="button">
+<span>EQ</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">= Uguale</span>
+</button>
+</div>
+</div>
+<!-- Parameter 3 & 4: Steppers for Limit Value & DO Index -->
+<div class="grid grid-cols-2 gap-space-md">
+<!-- Limit Value Stepper -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Valore Limite</label>
+<div class="flex items-stretch bg-surface-container-lowest rounded h-12">
+<button class="w-12 h-12 flex items-center justify-center text-primary-container active:bg-surface-container-high rounded-l" onclick="adjustValue(-1)" type="button">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<div class="flex-1 flex items-center justify-center font-code-editor-base text-code-editor-base text-on-surface font-semibold" id="limit-display">
+                10
+              </div>
+<button class="w-12 h-12 flex items-center justify-center text-primary-container active:bg-surface-container-high rounded-r" onclick="adjustValue(1)" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- DO Index Stepper (1 to 3 in Fanuc specs) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Indice DO / END</label>
+<div class="flex items-stretch bg-surface-container-lowest rounded h-12">
+<button class="w-12 h-12 flex items-center justify-center text-secondary active:bg-surface-container-high rounded-l" onclick="adjustIndex(-1)" type="button">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<div class="flex-1 flex items-center justify-center font-code-editor-base text-code-editor-base text-secondary font-semibold" id="index-display">
+                1
+              </div>
+<button class="w-12 h-12 flex items-center justify-center text-secondary active:bg-surface-container-high rounded-r" onclick="adjustIndex(1)" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Industrial Touch Actions Area -->
+<div class="space-y-space-xs pt-space-xs">
+<!-- Main Macro Insertion Amber Target (min 52px height) -->
+<button class="w-full h-14 bg-primary-container text-surface rounded-lg font-label-lg text-label-lg font-bold uppercase tracking-wider flex items-center justify-center gap-space-xs shadow-md active:translate-y-0.5 active:bg-primary transition-all" id="insert-action-btn" onclick="triggerInsertionFeedback()" type="button">
+<span class="material-symbols-outlined text-[22px]">playlist_add</span>
+<span>INSERISCI ALLA RIGA 04 (DO1...END1)</span>
+</button>
+<!-- Secondary Dismiss Button -->
+<button class="w-full h-12 bg-surface-container text-on-surface-variant rounded-lg font-label-md text-label-md uppercase tracking-wide flex items-center justify-center active:bg-surface-container-high active:text-on-surface transition-colors" type="button">
+          Annulla Operazione
+        </button>
+</div>
+<!-- Industrial System Diagnostic Footer Strip -->
+<div class="flex items-center justify-between px-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+          MODALITA: EDIT BUFFER
+        </span>
+<span class="text-right">MIKRON P900 / FANUC 31i</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let currentValue = 10;
+  let currentIndex = 1;
+  let currentVar = '#100';
+  let currentOp = 'LT';
+
+  function setVariable(varName, label) {
+    currentVar = varName;
+    document.getElementById('preview-var').innerText = varName;
+    document.getElementById('preview-var-inner').innerText = varName;
+    document.getElementById('preview-var-inner-2').innerText = varName;
+
+    const buttons = document.querySelectorAll('.var-btn');
+    buttons.forEach((btn) => {
+      const span = btn.querySelector('span');
+      if (span && span.innerText === varName) {
+        btn.className = 'var-btn h-12 bg-primary-container text-surface rounded font-code-editor-base text-code-editor-base flex flex-col items-center justify-center font-bold';
+      } else {
+        btn.className = 'var-btn h-12 bg-surface-container-high text-on-surface rounded font-code-editor-base text-code-editor-base flex flex-col items-center justify-center active:bg-surface-container-highest';
+      }
+    });
+  }
+
+  function setOperator(op, desc) {
+    currentOp = op;
+    document.getElementById('preview-op').innerText = op;
+
+    const opLt = document.getElementById('op-lt');
+    const opGt = document.getElementById('op-gt');
+    const opEq = document.getElementById('op-eq');
+
+    [opLt, opGt, opEq].forEach((el) => {
+      el.className = 'op-btn h-12 bg-transparent text-on-surface rounded font-label-md text-label-md uppercase flex flex-col items-center justify-center active:bg-surface-container-high';
+    });
+
+    if (op === 'LT') opLt.className = 'op-btn h-12 bg-surface-container-high text-primary rounded font-label-md text-label-md uppercase flex flex-col items-center justify-center font-bold shadow-sm';
+    if (op === 'GT') opGt.className = 'op-btn h-12 bg-surface-container-high text-primary rounded font-label-md text-label-md uppercase flex flex-col items-center justify-center font-bold shadow-sm';
+    if (op === 'EQ') opEq.className = 'op-btn h-12 bg-surface-container-high text-primary rounded font-label-md text-label-md uppercase flex flex-col items-center justify-center font-bold shadow-sm';
+  }
+
+  function adjustValue(delta) {
+    currentValue = Math.max(1, currentValue + delta);
+    document.getElementById('limit-display').innerText = currentValue;
+    document.getElementById('preview-val').innerText = currentValue;
+  }
+
+  function adjustIndex(delta) {
+    currentIndex = Math.min(3, Math.max(1, currentIndex + delta));
+    document.getElementById('index-display').innerText = currentIndex;
+    document.getElementById('preview-idx-1').innerText = currentIndex;
+    document.getElementById('preview-idx-2').innerText = currentIndex;
+    
+    const insertBtnSpan = document.querySelector('#insert-action-btn span:last-child');
+    if (insertBtnSpan) {
+      insertBtnSpan.innerText = `INSERISCI ALLA RIGA 04 (DO${currentIndex}...END${currentIndex})`;
+    }
+  }
+
+  function triggerInsertionFeedback() {
+    const btn = document.getElementById('insert-action-btn');
+    const origText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[22px]">check_circle</span><span>MACRO INSERITA NEL BLOCCO 04</span>`;
+    btn.classList.remove('bg-primary-container', 'text-surface');
+    btn.classList.add('bg-tertiary', 'text-on-tertiary');
+    setTimeout(() => {
+      btn.innerHTML = origText;
+      btn.classList.add('bg-primary-container', 'text-surface');
+      btn.classList.remove('bg-tertiary', 'text-on-tertiary');
+    }, 1200);
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary bg-surface-container-high"><div class="flex justify-between items-stretch h-20 px-space-xs py-space-xs gap-1"><a class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded bg-surface-container-low text-on-surface-variant transition-colors" data-path="apri-file" href="#"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="font-label-sm text-label-sm mt-0.5">Apri</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded transition-colors text-primary bg-surface-container-high" data-path="macro-b" href="#"><span class="material-symbols-outlined text-[20px]">code</span><span class="font-label-sm text-label-sm mt-0.5">Macro B</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded bg-surface-container-low text-on-surface-variant transition-colors" data-path="dimensione" href="#"><span class="material-symbols-outlined text-[20px]">format_size</span><span class="font-label-sm text-label-sm mt-0.5">Dim A±</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded bg-surface-container-low text-on-surface-variant transition-colors" data-path="ricerca-lente" href="#"><span class="material-symbols-outlined text-[20px]">search</span><span class="font-label-sm text-label-sm mt-0.5">Lente</span></a><a class="flex-1 flex flex-col items-center justify-center min-w-[56px] min-h-[44px] rounded bg-surface-container-low text-on-surface-variant transition-colors" data-path="esporta" href="#"><span class="material-symbols-outlined text-[20px]">ios_share</span><span class="font-label-sm text-label-sm mt-0.5">Esporta</span></a></div></nav></body></html>
